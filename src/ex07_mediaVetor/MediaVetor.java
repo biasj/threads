@@ -19,11 +19,11 @@ public class MediaVetor extends Thread{
     
     @Override
     public void run() {
-        int soma = 0;
-        for(int i=1;i<vetor.length;i++) {
+        double soma = 0;
+        for(int i=0;i<vetor.length;i++) {
             soma += vetor[i];
         }
         
-        media = soma/vetor.length;
+        media =  soma/vetor.length;
     }
 }

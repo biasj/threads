@@ -3,30 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ex05_vetorConstante;
+package ex07_mediaVetor;
 
 import static ex02_somaParalela.Soma.leVetor;
-import static ex03_multiplicaMatriz.multiplica.imprimeVetor;
 
 /**
  *
  * @author beatrizsato
  */
-public class testeVetorThreads {
+public class testeMediaVetor {
     public static void main(String[] args) {
-        int vetor[] = leVetor();
-        int constante = 3;
+        int[] vetor = leVetor();
         
-        MultiplicaVetor multiplica = new MultiplicaVetor(vetor, constante);
+        MediaVetor media = new MediaVetor(vetor);
         
-        multiplica.start();
+        media.start();
         
         try {
-           multiplica.join();
+            media.join();
+            System.out.println(media.media);
         } catch(InterruptedException ex) {
             ex.printStackTrace();
         }
-        
-        imprimeVetor(vetor);
+               
     }
 }
