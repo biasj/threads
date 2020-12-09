@@ -8,9 +8,37 @@ package ex04_primos;
 import java.util.List;
 
 /**
- *
- * @author beatrizsato
+ * Grupo do PI: 
+ * 
+ * Beatriz Sato
+ * Gabriel Friedmann
+ * Marcelo Frost Marchesan
+ * 
  */
+
+/* 
+
+Para saber como calcular os numeros primos de forma paralela, pesquisamos um pouco na internet.
+No site do devmedia achamos uma solução que caberia para a nossa, e o algoritmo para
+calcular foi nosso, mas na classe de teste pegamos deles.
+
+Na classe de primosThreads, a gente verifica quantos processadores disponíveis existem
+e dividimos o intervalo de 0 a 99999 em intervalos menores, para cada thread
+executar determinado intervalo.
+
+Como eles estão acessando o mesmo recurso, o site indicou usar o synchronized(primos),
+e quando todas as threads acabam de executar, a gente imprime os numeros primos encontrados
+
+
+Também fizemos a classe primosTeste, que seria como a gente tinha pensado em resolver
+a primeira vez, mas usando apenas uma thread.
+
+
+Site de referência:
+https://www.devmedia.com.br/programacao-paralela-com-java/33062
+
+*/
+
 public class Primos extends Thread{
     int valorInicial;
     int valorFinal;

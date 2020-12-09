@@ -6,9 +6,26 @@
 package ex07_mediaVetor;
 
 /**
- *
- * @author beatrizsato
+ * Grupo do PI: 
+ * 
+ * Beatriz Sato
+ * Gabriel Friedmann
+ * Marcelo Frost Marchesan
+ * 
  */
+
+
+/* 
+
+Nesse exercício de média a gente não conseguiu pensar em como deixar ele de 
+forma paralela? não conseguimos pensar em uma maneira que utilizaria mais de uma thread
+e até chegamos a rever as aulas e os slides, mas ainda assim não conseguimos mudar a 
+maneira que pensamos, então apenas resolvemos o exercício e colocamos em uma única thread
+separada para executar.
+
+*/
+
+
 public class MediaVetor extends Thread{
     int[] vetor;
     double media;

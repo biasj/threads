@@ -53,8 +53,10 @@ public class testeCorrida {
         List<Corrida> corrida = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
         boolean inscricoesAbertas = true;
+        
         System.out.println("AREA DE INSCRICAO");
         System.out.println("'fim' para sair");
+        
         while(inscricoesAbertas) {
             System.out.print("Nome do carro: ");
             String carro = scanner.next();
